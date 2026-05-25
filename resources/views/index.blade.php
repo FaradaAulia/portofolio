@@ -258,7 +258,7 @@
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                 <div class="md:col-span-1 lg:col-span-2 lg:row-span-2 neobrutal-card-gold p-0 overflow-hidden group">
                     <div class="relative w-full h-full min-h-[320px] lg:min-h-[400px]">
-                        <img src="{{ $profile['avatar'] }}" alt="{{ $profile['name'] }}" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500 scale-100 group-hover:scale-105">
+                        <img src="{{ asset('image/farada.jpeg')}}" alt="{{ $profile['name'] }}" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500 scale-100 group-hover:scale-105">
                         <div class="absolute bottom-0 left-0 right-0 bg-slate-950/90 border-t-3 border-secondary-500 px-6 py-4">
                             <h4 class="text-xl font-display font-extrabold text-white">{{ $profile['name'] }}</h4>
                             <p class="text-secondary-500 font-bold text-sm uppercase tracking-wider">{{ $profile['title'] }}</p>
