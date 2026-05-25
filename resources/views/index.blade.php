@@ -19,108 +19,105 @@
 
     <script src="https://cdn.tailwindcss.com"></script>
 
-<script>
-    tailwind.config = {
-        theme: {
-            extend: {
-                colors: {
-                    primary: {
-                        400: '#8da34b',
-                        500: '#708238', // Warna utama hijau olive neobrutal kamu
-                        600: '#55632a',
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            400: '#8da34b',
+                            500: '#708238', 
+                            600: '#55632a',
+                        },
+                        secondary: {
+                            500: '#aa8546', 
+                            600: '#8a6b35',
+                        }
                     },
-                    secondary: {
-                        500: '#aa8546', // Warna aksen emas/kuning bento
-                        600: '#8a6b35',
+                    borderWidth: {
+                        '3': '3px',
+                    },
+                    fontFamily: {
+                        display: ['Plus Jakarta Sans', 'sans-serif'],
                     }
-                },
-                borderWidth: {
-                    '3': '3px',
-                },
-                fontFamily: {
-                    display: ['Plus Jakarta Sans', 'sans-serif'],
                 }
             }
         }
-    }
-</script>
-        </script>
-        <style>
-            html {
-                scroll-behavior: smooth;
-                scroll-padding-top: 80px;
-            }
-            ::-webkit-scrollbar { width: 8px; }
-            ::-webkit-scrollbar-track { background: #0a0c08; }
-            ::-webkit-scrollbar-thumb { background: #1e293b; border-radius: 4px; }
-            ::-webkit-scrollbar-thumb:hover { background: #334155; }
-            @keyframes float {
-                0%, 100% { transform: translateY(0); }
-                50% { transform: translateY(-10px); }
-            }
-            .animate-float { animation: float 6s ease-in-out infinite; }
-            @keyframes pulse-slow {
-                0%, 100% { opacity: 0.4; }
-                50% { opacity: 0.8; }
-            }
-            .animate-pulse-slow { animation: pulse-slow 8s ease-in-out infinite; }
-            .glassmorphism {
-                background: rgba(15, 23, 42, 0.65);
-                backdrop-filter: blur(16px);
-                -webkit-backdrop-filter: blur(16px);
-                border: 1px solid rgba(255, 255, 255, 0.05);
-            }
-            .bg-dot-pattern {
-                background-image: radial-gradient(rgba(255, 255, 255, 0.07) 1px, transparent 1px);
-                background-size: 24px 24px;
-            }
-            /* Neobrutalist utilities fallback */
-            .neobrutal-card {
-                background: rgba(15, 20, 10, 0.85);
-                border: 3px solid #708238;
-                box-shadow: 6px 6px 0px 0px #708238;
-                transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-            }
-            .neobrutal-card:hover {
-                transform: translate(-2px, -2px);
-                box-shadow: 8px 8px 0px 0px #708238;
-            }
-            .neobrutal-card:active {
-                transform: translate(2px, 2px);
-                box-shadow: 2px 2px 0px 0px #708238;
-            }
-            .neobrutal-card-gold {
-                background: rgba(15, 20, 10, 0.85);
-                border: 3px solid #c5a059;
-                box-shadow: 6px 6px 0px 0px #c5a059;
-                transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-            }
-            .neobrutal-card-gold:hover {
-                transform: translate(-2px, -2px);
-                box-shadow: 8px 8px 0px 0px #c5a059;
-            }
-            .neobrutal-card-gold:active {
-                transform: translate(2px, 2px);
-                box-shadow: 2px 2px 0px 0px #c5a059;
-            }
-            .shadow-neobrutal-primary { box-shadow: 6px 6px 0px 0px #708238; }
-            .shadow-neobrutal-secondary { box-shadow: 6px 6px 0px 0px #c5a059; }
-            .shadow-neobrutal-sm-primary { box-shadow: 4px 4px 0px 0px #708238; }
-            .shadow-neobrutal-sm-secondary { box-shadow: 4px 4px 0px 0px #c5a059; }
-            .border-neobrutal { border: 3px solid #708238; }
-            .border-neobrutal-secondary { border: 3px solid #c5a059; }
-            .social-tile {
-                transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-            }
-            .social-tile:hover {
-                transform: translate(-3px, -3px);
-            }
-            .social-tile:active {
-                transform: translate(2px, 2px);
-                box-shadow: 2px 2px 0px 0px currentColor !important;
-            }
-        </style>
-    @endif
+    </script>
+    <style>
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 80px;
+        }
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #0a0c08; }
+        ::-webkit-scrollbar-thumb { background: #1e293b; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #334155; }
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+        .animate-float { animation: float 6s ease-in-out infinite; }
+        @keyframes pulse-slow {
+            0%, 100% { opacity: 0.4; }
+            50% { opacity: 0.8; }
+        }
+        .animate-pulse-slow { animation: pulse-slow 8s ease-in-out infinite; }
+        .glassmorphism {
+            background: rgba(15, 23, 42, 0.65);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        .bg-dot-pattern {
+            background-image: radial-gradient(rgba(255, 255, 255, 0.07) 1px, transparent 1px);
+            background-size: 24px 24px;
+        }
+        .neobrutal-card {
+            background: rgba(15, 20, 10, 0.85);
+            border: 3px solid #708238;
+            box-shadow: 6px 6px 0px 0px #708238;
+            transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .neobrutal-card:hover {
+            transform: translate(-2px, -2px);
+            box-shadow: 8px 8px 0px 0px #708238;
+        }
+        .neobrutal-card:active {
+            transform: translate(2px, 2px);
+            box-shadow: 2px 2px 0px 0px #708238;
+        }
+        .neobrutal-card-gold {
+            background: rgba(15, 20, 10, 0.85);
+            border: 3px solid #c5a059;
+            box-shadow: 6px 6px 0px 0px #c5a059;
+            transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .neobrutal-card-gold:hover {
+            transform: translate(-2px, -2px);
+            box-shadow: 8px 8px 0px 0px #c5a059;
+        }
+        .neobrutal-card-gold:active {
+            transform: translate(2px, 2px);
+            box-shadow: 2px 2px 0px 0px #c5a059;
+        }
+        .shadow-neobrutal-primary { box-shadow: 6px 6px 0px 0px #708238; }
+        .shadow-neobrutal-secondary { box-shadow: 6px 6px 0px 0px #c5a059; }
+        .shadow-neobrutal-sm-primary { box-shadow: 4px 4px 0px 0px #708238; }
+        .shadow-neobrutal-sm-secondary { box-shadow: 4px 4px 0px 0px #c5a059; }
+        .border-neobrutal { border: 3px solid #708238; }
+        .border-neobrutal-secondary { border: 3px solid #c5a059; }
+        .social-tile {
+            transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .social-tile:hover {
+            transform: translate(-3px, -3px);
+        }
+        .social-tile:active {
+            transform: translate(2px, 2px);
+            box-shadow: 2px 2px 0px 0px currentColor !important;
+        }
+    </style>
 </head>
 <body class="bg-slate-950 text-slate-100 font-sans selection:bg-primary-500 selection:text-white overflow-x-hidden antialiased bg-dot-pattern">
 
@@ -628,7 +625,7 @@
                 <a href="#home" class="text-lg font-display font-extrabold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-primary-500 to-secondary-500">
                     {{ $profile['name'] }}
                 </a>
-                <p class="text-xs text-slate-500 font-bold uppercase tracking-wider">Megangung Web Impian Anda dengan Clean Code & Clean Design.</p>
+                <p class="text-xs text-slate-500 font-bold uppercase tracking-wider">Membangun Web Impian Anda dengan Clean Code & Clean Design.</p>
             </div>
 
             <div class="flex items-center space-x-3">
