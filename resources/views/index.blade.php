@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>{{ $profile['name'] }} | {{ $profile['title'] }}</title>
+    <title>{{ $profile['name'] }} | {{ $profile['title'] }} !</title>
     
     <meta name="description" content="{{ $profile['sub_title'] }}. {{ $profile['bio_short'] }}">
     <meta name="keywords" content="Portfolio, Full Stack Developer, Laravel Developer, Web Developer Indonesia, {{ $profile['name'] }}">
