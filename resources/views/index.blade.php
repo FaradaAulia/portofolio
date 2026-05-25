@@ -17,37 +17,33 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <script src="https://unpkg.com/lucide@0.475.0/dist/umd/lucide.min.js"></script>
 
-    @if (file_exists(public_path('build/manifest.json')))
-        @vite(['resources/css/app.css', 'resources/js/app.js'])
-    @else
-        <script src="https://cdn.tailwindcss.com"></script>
-        <script>
-            tailwind.config = {
-                theme: {
-                    extend: {
-                        fontFamily: {
-                            sans: ['Plus Jakarta Sans', 'sans-serif'],
-                            display: ['Outfit', 'sans-serif'],
-                        },
-                        colors: {
-                            slate: {
-                                950: '#0a0c08',
-                            },
-                            primary: {
-                                50: '#f4f6f0',
-                                100: '#e6ebd9',
-                                500: '#708238',
-                                600: '#5b6b2d',
-                                700: '#465322',
-                            },
-                            secondary: {
-                                500: '#c5a059',
-                                600: '#aa8546',
-                            }
-                        }
+    <script src="https://cdn.tailwindcss.com"></script>
+
+<script>
+    tailwind.config = {
+        theme: {
+            extend: {
+                colors: {
+                    primary: {
+                        400: '#8da34b',
+                        500: '#708238', // Warna utama hijau olive neobrutal kamu
+                        600: '#55632a',
+                    },
+                    secondary: {
+                        500: '#aa8546', // Warna aksen emas/kuning bento
+                        600: '#8a6b35',
                     }
+                },
+                borderWidth: {
+                    '3': '3px',
+                },
+                fontFamily: {
+                    display: ['Plus Jakarta Sans', 'sans-serif'],
                 }
             }
+        }
+    }
+</script>
         </script>
         <style>
             html {
