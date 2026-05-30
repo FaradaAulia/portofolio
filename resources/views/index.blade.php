@@ -166,6 +166,7 @@
                 <li><a href="#experience" class="nav-link hover:text-primary-500 transition-colors duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2 rounded-md px-2 py-1">Pengalaman</a></li>
                 <li><a href="#projects" class="nav-link hover:text-primary-500 transition-colors duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2 rounded-md px-2 py-1">Proyek</a></li>
                 <li><a href="#certificates" class="nav-link hover:text-primary-500 transition-colors duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2 rounded-md px-2 py-1">Sertifikasi</a></li>
+                <li><a href="#faq" class="nav-link hover:text-primary-500 transition-colors duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2 rounded-md px-2 py-1">FAQ</a></li>
                 <li><a href="#contact" class="nav-link hover:text-primary-500 transition-colors duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2 rounded-md px-2 py-1">Kontak</a></li>
             </ul>
 
@@ -189,6 +190,7 @@
                 <li><a href="#experience" class="block py-3 hover:text-primary-500 hover:bg-primary-50 rounded-xl transition-all duration-200 mobile-nav-link">Pengalaman</a></li>
                 <li><a href="#projects" class="block py-3 hover:text-primary-500 hover:bg-primary-50 rounded-xl transition-all duration-200 mobile-nav-link">Proyek</a></li>
                 <li><a href="#certificates" class="block py-3 hover:text-primary-500 hover:bg-primary-50 rounded-xl transition-all duration-200 mobile-nav-link">Sertifikasi</a></li>
+                <li><a href="#faq" class="block py-3 hover:text-primary-500 hover:bg-primary-50 rounded-xl transition-all duration-200 mobile-nav-link">FAQ</a></li>
                 <li><a href="#contact" class="block py-3 hover:text-primary-500 hover:bg-primary-50 rounded-xl transition-all duration-200 mobile-nav-link">Kontak</a></li>
                 <li class="pt-4">
                     <a href="#contact" class="inline-block w-full text-center py-3 rounded-xl bg-primary-500 text-white font-semibold shadow-lg shadow-primary-500/30 hover:bg-primary-600 transition-all duration-300 mobile-nav-link">
@@ -599,6 +601,69 @@
             </div>
         </section>
 
+        <!-- FAQ Section -->
+        <section id="faq" class="py-24">
+            <div class="text-center max-w-2xl mx-auto mb-16 flex flex-col items-center" data-aos="fade-up">
+                <span class="text-xs text-primary-600 font-bold uppercase tracking-widest bg-primary-50 px-4 py-1.5 rounded-full mb-4">FAQ</span>
+                <h3 class="text-3xl md:text-4xl font-display font-extrabold text-slate-800 leading-tight">Pertanyaan Umum</h3>
+                <div class="w-16 h-1.5 rounded-full bg-primary-500 mt-6"></div>
+            </div>
+
+            <div class="max-w-3xl mx-auto space-y-4">
+                <!-- Item 1 -->
+                <details class="group modern-card bg-white rounded-2xl overflow-hidden [&_summary::-webkit-details-marker]:hidden faq-detail" data-aos="fade-up" data-aos-delay="100">
+                    <summary class="flex justify-between items-center font-bold cursor-pointer list-none p-6 text-slate-800 hover:text-primary-600 transition-colors duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-500">
+                        <span>Apakah Anda menerima proyek freelance atau pembuatan website khusus?</span>
+                        <span class="transition-transform duration-300 group-open:-rotate-180 text-primary-500 shrink-0 ml-4">
+                            <i data-lucide="chevron-down" class="w-5 h-5"></i>
+                        </span>
+                    </summary>
+                    <div class="text-slate-600 text-sm md:text-base p-6 pt-0 leading-relaxed border-t border-slate-50 mt-2">
+                        Ya, saya terbuka untuk proyek freelance. Mulai dari pembuatan website perusahaan (company profile), sistem informasi, e-commerce, hingga aplikasi web kustom yang disesuaikan dengan kebutuhan Anda.
+                    </div>
+                </details>
+
+                <!-- Item 2 -->
+                <details class="group modern-card bg-white rounded-2xl overflow-hidden [&_summary::-webkit-details-marker]:hidden faq-detail" data-aos="fade-up" data-aos-delay="200">
+                    <summary class="flex justify-between items-center font-bold cursor-pointer list-none p-6 text-slate-800 hover:text-primary-600 transition-colors duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-500">
+                        <span>Berapa lama estimasi waktu pembuatan sebuah website?</span>
+                        <span class="transition-transform duration-300 group-open:-rotate-180 text-primary-500 shrink-0 ml-4">
+                            <i data-lucide="chevron-down" class="w-5 h-5"></i>
+                        </span>
+                    </summary>
+                    <div class="text-slate-600 text-sm md:text-base p-6 pt-0 leading-relaxed border-t border-slate-50 mt-2">
+                        Waktu pengerjaan bergantung pada kompleksitas fitur yang diminta. Untuk website sederhana (seperti company profile) biasanya memakan waktu 1-2 minggu, sementara aplikasi yang lebih kompleks bisa membutuhkan waktu 1 bulan atau lebih.
+                    </div>
+                </details>
+
+                <!-- Item 3 -->
+                <details class="group modern-card bg-white rounded-2xl overflow-hidden [&_summary::-webkit-details-marker]:hidden faq-detail" data-aos="fade-up" data-aos-delay="300">
+                    <summary class="flex justify-between items-center font-bold cursor-pointer list-none p-6 text-slate-800 hover:text-primary-600 transition-colors duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-500">
+                        <span>Apakah Anda menyediakan dukungan atau pemeliharaan (maintenance)?</span>
+                        <span class="transition-transform duration-300 group-open:-rotate-180 text-primary-500 shrink-0 ml-4">
+                            <i data-lucide="chevron-down" class="w-5 h-5"></i>
+                        </span>
+                    </summary>
+                    <div class="text-slate-600 text-sm md:text-base p-6 pt-0 leading-relaxed border-t border-slate-50 mt-2">
+                        Tentu. Saya memberikan dukungan dan masa garansi perbaikan bug secara gratis dalam periode tertentu setelah perilisan. Setelah itu, Anda juga dapat mendiskusikan paket pemeliharaan lanjutan bersama saya.
+                    </div>
+                </details>
+
+                <!-- Item 4 -->
+                <details class="group modern-card bg-white rounded-2xl overflow-hidden [&_summary::-webkit-details-marker]:hidden faq-detail" data-aos="fade-up" data-aos-delay="400">
+                    <summary class="flex justify-between items-center font-bold cursor-pointer list-none p-6 text-slate-800 hover:text-primary-600 transition-colors duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-500">
+                        <span>Teknologi (stack) apa yang biasanya Anda gunakan dalam pengembangan?</span>
+                        <span class="transition-transform duration-300 group-open:-rotate-180 text-primary-500 shrink-0 ml-4">
+                            <i data-lucide="chevron-down" class="w-5 h-5"></i>
+                        </span>
+                    </summary>
+                    <div class="text-slate-600 text-sm md:text-base p-6 pt-0 leading-relaxed border-t border-slate-50 mt-2">
+                        Saya berspesialisasi dalam ekosistem PHP dan JavaScript. Untuk backend, saya ahli menggunakan Framework Laravel. Sedangkan untuk frontend, saya biasa menggunakan gabungan Tailwind CSS dan terkadang Alpine.js atau Vue.js untuk antarmuka yang dinamis.
+                    </div>
+                </details>
+            </div>
+        </section>
+
         <!-- Contact Section -->
         <section id="contact" class="py-24">
             <div class="text-center max-w-2xl mx-auto mb-16 flex flex-col items-center" data-aos="fade-up">
@@ -832,6 +897,18 @@
                     }
                 }
             }
+        });
+
+        // Exclusive Accordion Logic for FAQ
+        const faqDetails = document.querySelectorAll('.faq-detail');
+        faqDetails.forEach((targetDetail) => {
+            targetDetail.addEventListener('click', () => {
+                faqDetails.forEach((detail) => {
+                    if (detail !== targetDetail) {
+                        detail.removeAttribute('open');
+                    }
+                });
+            });
         });
     </script>
 </body>
