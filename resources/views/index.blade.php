@@ -6,9 +6,26 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>{{ $profile['name'] }} | {{ $profile['title'] }}</title>
     
+    <!-- Primary Meta Tags -->
     <meta name="description" content="{{ $profile['sub_title'] }}. {{ $profile['bio_short'] }}">
     <meta name="keywords" content="Portfolio, Full Stack Developer, Laravel Developer, Web Developer Indonesia, {{ $profile['name'] }}">
     <meta name="author" content="{{ $profile['name'] }}">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="Indonesian">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ url()->current() }}">
+    <meta property="og:title" content="{{ $profile['name'] }} | {{ $profile['title'] }}">
+    <meta property="og:description" content="{{ $profile['sub_title'] }}. {{ $profile['bio_short'] }}">
+    <meta property="og:image" content="{{ asset('image/farada.jpeg') }}">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="{{ url()->current() }}">
+    <meta property="twitter:title" content="{{ $profile['name'] }} | {{ $profile['title'] }}">
+    <meta property="twitter:description" content="{{ $profile['sub_title'] }}. {{ $profile['bio_short'] }}">
+    <meta property="twitter:image" content="{{ asset('image/farada.jpeg') }}">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -163,11 +180,8 @@
                 <li><a href="#home" class="nav-link hover:text-primary-500 transition-colors duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2 rounded-md px-2 py-1">Beranda</a></li>
                 <li><a href="#about" class="nav-link hover:text-primary-500 transition-colors duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2 rounded-md px-2 py-1">Tentang</a></li>
                 <li><a href="#skills" class="nav-link hover:text-primary-500 transition-colors duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2 rounded-md px-2 py-1">Keahlian</a></li>
-                <li><a href="#experience" class="nav-link hover:text-primary-500 transition-colors duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2 rounded-md px-2 py-1">Pengalaman</a></li>
                 <li><a href="#projects" class="nav-link hover:text-primary-500 transition-colors duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2 rounded-md px-2 py-1">Proyek</a></li>
-                <li><a href="#certificates" class="nav-link hover:text-primary-500 transition-colors duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2 rounded-md px-2 py-1">Sertifikasi</a></li>
                 <li><a href="#faq" class="nav-link hover:text-primary-500 transition-colors duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2 rounded-md px-2 py-1">FAQ</a></li>
-                <li><a href="#contact" class="nav-link hover:text-primary-500 transition-colors duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2 rounded-md px-2 py-1">Kontak</a></li>
             </ul>
 
             <div class="hidden lg:flex items-center space-x-4">
@@ -187,11 +201,8 @@
                 <li><a href="#home" class="block py-3 hover:text-primary-500 hover:bg-primary-50 rounded-xl transition-all duration-200 mobile-nav-link">Beranda</a></li>
                 <li><a href="#about" class="block py-3 hover:text-primary-500 hover:bg-primary-50 rounded-xl transition-all duration-200 mobile-nav-link">Tentang</a></li>
                 <li><a href="#skills" class="block py-3 hover:text-primary-500 hover:bg-primary-50 rounded-xl transition-all duration-200 mobile-nav-link">Keahlian</a></li>
-                <li><a href="#experience" class="block py-3 hover:text-primary-500 hover:bg-primary-50 rounded-xl transition-all duration-200 mobile-nav-link">Pengalaman</a></li>
                 <li><a href="#projects" class="block py-3 hover:text-primary-500 hover:bg-primary-50 rounded-xl transition-all duration-200 mobile-nav-link">Proyek</a></li>
-                <li><a href="#certificates" class="block py-3 hover:text-primary-500 hover:bg-primary-50 rounded-xl transition-all duration-200 mobile-nav-link">Sertifikasi</a></li>
                 <li><a href="#faq" class="block py-3 hover:text-primary-500 hover:bg-primary-50 rounded-xl transition-all duration-200 mobile-nav-link">FAQ</a></li>
-                <li><a href="#contact" class="block py-3 hover:text-primary-500 hover:bg-primary-50 rounded-xl transition-all duration-200 mobile-nav-link">Kontak</a></li>
                 <li class="pt-4">
                     <a href="#contact" class="inline-block w-full text-center py-3 rounded-xl bg-primary-500 text-white font-semibold shadow-lg shadow-primary-500/30 hover:bg-primary-600 transition-all duration-300 mobile-nav-link">
                         Mari Berbincang
@@ -610,6 +621,19 @@
             </div>
 
             <div class="max-w-3xl mx-auto space-y-4">
+                <!-- Item 0 -->
+                <details class="group modern-card bg-white rounded-2xl overflow-hidden [&_summary::-webkit-details-marker]:hidden faq-detail" data-aos="fade-up" data-aos-delay="50">
+                    <summary class="flex justify-between items-center font-bold cursor-pointer list-none p-6 text-slate-800 hover:text-primary-600 transition-colors duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-500">
+                        <span>Siapa sebenarnya Farada Aulia itu?</span>
+                        <span class="transition-transform duration-300 group-open:-rotate-180 text-primary-500 shrink-0 ml-4">
+                            <i data-lucide="chevron-down" class="w-5 h-5"></i>
+                        </span>
+                    </summary>
+                    <div class="text-slate-600 text-sm md:text-base p-6 pt-0 leading-relaxed border-t border-slate-50 mt-2">
+                        Saya adalah seorang {{ $profile['title'] }} yang berfokus pada pengembangan aplikasi web modern dengan antarmuka yang indah dan fungsional. Saya memiliki ketertarikan mendalam pada teknologi web dan selalu berusaha memberikan solusi terbaik bagi setiap permasalahan bisnis melalui baris kode yang bersih dan terstruktur.
+                    </div>
+                </details>
+
                 <!-- Item 1 -->
                 <details class="group modern-card bg-white rounded-2xl overflow-hidden [&_summary::-webkit-details-marker]:hidden faq-detail" data-aos="fade-up" data-aos-delay="100">
                     <summary class="flex justify-between items-center font-bold cursor-pointer list-none p-6 text-slate-800 hover:text-primary-600 transition-colors duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-500">
